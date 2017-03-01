@@ -1,0 +1,25 @@
+{
+  "name": "advancelocal",
+  "version": "1.0.0",
+  "description": "Advance Local Gulp Dependencies",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fusty:yellowRobot83@github.com/Fusty/jenkinspushtest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fusty/jenkinspushtest/issues"
+  },
+  "homepage": "https://github.com/Fusty/jenkinspushtest#readme",
+  "dependencies": {
+    "casperjs": "^1.1.3",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
+    "phantomjs": "^2.1.7"
+  }
+}
