@@ -20,6 +20,5 @@
     "casperjs": "^1.1.3",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
-    "phantomjs": "^2.1.7"
   }
 }
