@@ -1,5 +1,5 @@
 casper.test.begin('Homepage Existence', 1, function(test) {
-    casper.start('http://advancelocal.ethdoe.com', function() {
+    casper.start('http://advancelocal.ethode.com', function() {
         test.assertSelectorHasText('h1', 'Advance Local');
     });
 
