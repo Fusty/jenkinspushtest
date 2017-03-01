@@ -2,6 +2,8 @@ var spawn = require('child_process').spawn,
     gulp = require('gulp'),
     gutil = require('gulp-util');
 
+var exitcode = 0;
+
 gulp.task('test', function () {
     var tests = ['tests.js'];
 
@@ -12,8 +14,16 @@ gulp.task('test', function () {
     });
 
     casperChild.on('close', function (code) {
-        var success = code === 0; // Will be 1 in the event of failure
+    	exitcode = code;
 
-        // Do something with success here
+        process.emit('exit');
     });
+});
+
+
+//Just to be sure about exit statuses
+process.on('exit', function () {
+  process.nextTick(function () {
+    process.exit(exitcode)
+  });
 });
