@@ -7,7 +7,7 @@ var exitcode = 0;
 gulp.task('test', function () {
     var tests = ['tests.js'];
 
-    var casperChild = spawn('casperjs', ['test'].concat(tests));
+    var casperChild = spawn('casperjs', ['test', '--xunit=xunit.xml'].concat(tests));
 
     casperChild.stdout.on('data', function (data) {
         gutil.log('CasperJS:', data.toString().slice(0, -1)); // Remove \n
